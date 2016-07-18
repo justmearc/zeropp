@@ -3,7 +3,7 @@ import tkMessageBox
 import gridbutton
 
 top = Tkinter.Tk()
-
+top.withdraw()
 class Run():
     def _init_(self,fona):
         self.fona = fona
