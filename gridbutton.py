@@ -1,5 +1,6 @@
 import Tkinter
 import tkMessageBox
+from playcoding2 import make_call,end_call
 
 
 top = Tkinter.Tk()
@@ -38,6 +39,10 @@ def delete():
     Entry.delete(0)
 def textMessage():
     print "text message"
+def makeCall():
+    self.make_call
+def endCall():
+    self.end_call
 
     
           
@@ -68,9 +73,9 @@ L = Tkinter.Button(top, text="#", command = pound)
 L.grid(column=2, row=4)
 M = Tkinter.Button(top, text="del", command = delete)
 M.grid(column=3, row=1)
-N = Tkinter.Button(top, text="call", command = make_call)
+N = Tkinter.Button(top, text="call", command = makeCall)
 N.grid(column=3, row=2)
-O = Tkinter.Button(top, text="end", command = end_call)
+O = Tkinter.Button(top, text="end", command = endCall)
 O.grid(column=3, row=3)
 P = Tkinter.Button(top, text="text", command = textMessage)
 P.grid(column=3, row=4)
