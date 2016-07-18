@@ -32,13 +32,10 @@ def star():
 
 #calling functions
 #make call sends number to call to serial the entry.get collects the numbers entered in the dialer. 
-def makeCall():
-    print (Entry.get())  
+ 
 #deletes one diget at a time
 def delete():
     Entry.delete(0)
-def endCall():
-    print "end call"  
 def textMessage():
     print "text message"
 
@@ -71,9 +68,9 @@ L = Tkinter.Button(top, text="#", command = pound)
 L.grid(column=2, row=4)
 M = Tkinter.Button(top, text="del", command = delete)
 M.grid(column=3, row=1)
-N = Tkinter.Button(top, text="call", command = makeCall)
+N = Tkinter.Button(top, text="call", command = make_call)
 N.grid(column=3, row=2)
-O = Tkinter.Button(top, text="end", command = endCall)
+O = Tkinter.Button(top, text="end", command = end_call)
 O.grid(column=3, row=3)
 P = Tkinter.Button(top, text="text", command = textMessage)
 P.grid(column=3, row=4)
